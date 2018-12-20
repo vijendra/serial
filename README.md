@@ -36,11 +36,11 @@ package main
 import (
         "log"
 
-        "github.com/tarm/serial"
+        "github.com/vijendra/serial"
 )
 
 func main() {
-        c := &serial.Config{Name: "COM45", Baud: 115200}
+        c := &serial.Config{Name: "COM4", Baud: 9600}
         s, err := serial.OpenPort(c)
         if err != nil {
                 log.Fatal(err)
