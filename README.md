@@ -46,6 +46,8 @@ func main() {
                 log.Fatal(err)
         }
         
+	s.SetRtsOn()
+	
         n, err := s.Write([]byte("test"))
         if err != nil {
                 log.Fatal(err)
